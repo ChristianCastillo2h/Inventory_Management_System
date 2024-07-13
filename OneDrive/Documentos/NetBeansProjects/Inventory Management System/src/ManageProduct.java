@@ -89,7 +89,7 @@ public class ManageProduct extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
-        jLabel1.setText("Manage Product");
+        jLabel1.setText("Gestión de productos");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 18, -1, -1));
 
         tableProduct.setModel(new javax.swing.table.DefaultTableModel(
@@ -97,7 +97,7 @@ public class ManageProduct extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Name", "Quantity", "Price", "Description", "Category ID", "Category Name"
+                "ID", "Nombre", "Cantidad", "Precio", "Descripción", "Categoría ID", "Categoría Nombre"
             }
         ));
         tableProduct.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -107,10 +107,10 @@ public class ManageProduct extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tableProduct);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 81, -1, 499));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 81, 460, 499));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Name");
+        jLabel2.setText("Nombre");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 120, -1, -1));
 
         txtName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -122,7 +122,7 @@ public class ManageProduct extends javax.swing.JFrame {
         getContentPane().add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 153, 338, -1));
 
         lblQuantity.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lblQuantity.setText("Quantity");
+        lblQuantity.setText("Cantidad");
         getContentPane().add(lblQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 192, -1, -1));
 
         txtQuantity.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -134,21 +134,21 @@ public class ManageProduct extends javax.swing.JFrame {
         getContentPane().add(txtQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 225, 338, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("Price");
+        jLabel4.setText("Precio");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 264, -1, -1));
 
         txtPrice.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 297, 338, -1));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setText("Description");
+        jLabel5.setText("Descripción");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 336, -1, -1));
 
         txtDescription.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 369, 338, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Category");
+        jLabel6.setText("Categoría");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 408, -1, -1));
 
         comboBoxCategory.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -156,7 +156,7 @@ public class ManageProduct extends javax.swing.JFrame {
         getContentPane().add(comboBoxCategory, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 441, 338, -1));
 
         btnSave.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnSave.setText("Save");
+        btnSave.setText("Guardar");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
@@ -165,25 +165,26 @@ public class ManageProduct extends javax.swing.JFrame {
         getContentPane().add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 480, -1, -1));
 
         btnUpdate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnUpdate.setText("Update");
+        btnUpdate.setText("Actualizar");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
-        getContentPane().add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(566, 480, -1, -1));
+        getContentPane().add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(556, 480, -1, -1));
 
         btnReset.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnReset.setText("Reset");
+        btnReset.setText("Restablecer");
+        btnReset.setVerifyInputWhenFocusTarget(false);
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnResetActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(658, 480, -1, -1));
+        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(648, 480, -1, -1));
 
         btnClose.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnClose.setText("Close");
+        btnClose.setText("Cerrar");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
@@ -223,7 +224,7 @@ public class ManageProduct extends javax.swing.JFrame {
         String category = (String) comboBoxCategory.getSelectedItem();
         String categoryId[] = category.split("-", 0);
         if (validateFields("new")) {
-            JOptionPane.showMessageDialog(null, "All fields are required");
+            JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios");
         } else {
             try {
                 Connection con = ConnectionProvider.getCon();
@@ -234,7 +235,7 @@ public class ManageProduct extends javax.swing.JFrame {
                 ps.setString(4, description);
                 ps.setString(5, categoryId[0]);
                 ps.executeUpdate();
-                JOptionPane.showMessageDialog(null, "Product Added Successfully");
+                JOptionPane.showMessageDialog(null, "Producto añadido con éxito");
                 setVisible(false);
                 new ManageProduct().setVisible(true);
             } catch (Exception e) {
@@ -274,7 +275,7 @@ public class ManageProduct extends javax.swing.JFrame {
 
         String quantity = model.getValueAt(index, 2).toString();
         totalQuantity = 0;
-        lblQuantity.setText("Add Quantity");
+        lblQuantity.setText("Añadir Cantidad");
         totalQuantity = Integer.parseInt(quantity);
 
         String price = model.getValueAt(index, 3).toString();
@@ -313,7 +314,7 @@ public class ManageProduct extends javax.swing.JFrame {
         String category = (String) comboBoxCategory.getSelectedItem();
         String categoryId[] = category.split("-", 0);
         if (validateFields("edit")) {
-            JOptionPane.showMessageDialog(null, "All fields are required");
+            JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios");
         } else {
             try {
                 if (!quantity.equals("")) {
@@ -328,7 +329,7 @@ public class ManageProduct extends javax.swing.JFrame {
                 ps.setString(5, categoryId[0]);
                 ps.setInt(6, productPk);
                 ps.executeUpdate();
-                JOptionPane.showMessageDialog(null, "Product Updated Successfully");
+                JOptionPane.showMessageDialog(null, "Producto actualizado con éxito");
                 setVisible(false);
                 new ManageProduct().setVisible(true);
             } catch (Exception e) {

@@ -67,7 +67,7 @@ public class ManageCustomer extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
-        jLabel1.setText("Manage Customer");
+        jLabel1.setText("Gestionar clientes");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(282, 32, -1, -1));
 
         tableCustomer.setModel(new javax.swing.table.DefaultTableModel(
@@ -75,7 +75,7 @@ public class ManageCustomer extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Name", "MobileNumber", "Email"
+                "ID", "Nombre", "Número de celular", "Correo electrónico"
             }
         ));
         tableCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -88,14 +88,14 @@ public class ManageCustomer extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 95, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Name");
+        jLabel2.setText("Nombre");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 120, -1, -1));
 
         txtName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 153, 370, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Mobile Number");
+        jLabel3.setText("Número de celular");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 192, -1, -1));
 
         txtMobileNumber.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -107,14 +107,14 @@ public class ManageCustomer extends javax.swing.JFrame {
         getContentPane().add(txtMobileNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 225, 370, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("Email");
+        jLabel4.setText("Correo electrónico");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 264, -1, -1));
 
         txtEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 297, 370, -1));
 
         btnSave.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnSave.setText("Save");
+        btnSave.setText("Guardar");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
@@ -123,25 +123,25 @@ public class ManageCustomer extends javax.swing.JFrame {
         getContentPane().add(btnSave, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, -1));
 
         btnUpdate.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnUpdate.setText("Update");
+        btnUpdate.setText("Actualizar");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
-        getContentPane().add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, -1, -1));
+        getContentPane().add(btnUpdate, new org.netbeans.lib.awtextra.AbsoluteConstraints(564, 340, -1, -1));
 
         btnReset.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnReset.setText("Reset");
+        btnReset.setText("Restablecer");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnResetActionPerformed(evt);
             }
         });
-        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 340, -1, -1));
+        getContentPane().add(btnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(662, 340, -1, -1));
 
         btnClose.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnClose.setText("Close");
+        btnClose.setText("Cerrar");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
@@ -193,7 +193,7 @@ public class ManageCustomer extends javax.swing.JFrame {
         String email = txtEmail.getText();
 
         if (validateFields()) {
-            JOptionPane.showMessageDialog(null, "All fields are required");
+            JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios");
         } else {
             try {
                 Connection con = ConnectionProvider.getCon();
@@ -202,7 +202,7 @@ public class ManageCustomer extends javax.swing.JFrame {
                 ps.setString(2, mobileNumber);
                 ps.setString(3, email);
                 ps.executeUpdate();
-                JOptionPane.showMessageDialog(null, "Customer Added Successfully ");
+                JOptionPane.showMessageDialog(null, "Cliente añadido con éxito ");
                 setVisible(false);
                 new ManageCustomer().setVisible(true);
             } catch (Exception e) {
@@ -238,7 +238,7 @@ public class ManageCustomer extends javax.swing.JFrame {
         String email = txtEmail.getText();
 
         if (validateFields()) {
-            JOptionPane.showMessageDialog(null, "All fields are required");
+            JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios");
         } else {
             try {
                 Connection con = ConnectionProvider.getCon();
@@ -248,7 +248,7 @@ public class ManageCustomer extends javax.swing.JFrame {
                 ps.setString(3, email);
                 ps.setInt(4, customerPk);
                 ps.executeUpdate();
-                JOptionPane.showMessageDialog(null, "Customer Updated Successfully ");
+                JOptionPane.showMessageDialog(null, "Cliente actualizado con éxito");
                 setVisible(false);
                 new ManageCustomer().setVisible(true);
             } catch (Exception e) {

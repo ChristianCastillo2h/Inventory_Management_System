@@ -53,7 +53,7 @@ public class ViewOrders extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
-        jLabel1.setText("View Orders");
+        jLabel1.setText("Ver pedidos");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 7, -1, -1));
 
         tableCustomer.setModel(new javax.swing.table.DefaultTableModel(
@@ -61,7 +61,7 @@ public class ViewOrders extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Name", "Mobile Number", "Email"
+                "ID", "Nombre", "Número de celular", "Correo electrónico"
             }
         ));
         tableCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -78,7 +78,7 @@ public class ViewOrders extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Order ID", "Date", "Total Paid"
+                "Pedido ID", "Fecha", "Total pagado"
             }
         ));
         tableOrders.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -91,7 +91,7 @@ public class ViewOrders extends javax.swing.JFrame {
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(426, 97, 411, -1));
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton1.setText("Close");
+        jButton1.setText("Cerrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -100,11 +100,11 @@ public class ViewOrders extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 542, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Customer List");
+        jLabel2.setText("Lista de clientes");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 64, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Order List");
+        jLabel3.setText("Lista de clientes");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(599, 64, -1, -1));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/All_page_Background.png"))); // NOI18N

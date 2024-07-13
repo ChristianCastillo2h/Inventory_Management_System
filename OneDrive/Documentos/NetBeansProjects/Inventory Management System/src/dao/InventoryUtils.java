@@ -9,5 +9,7 @@ package dao;
  * @author casma
  */
 public class InventoryUtils {
-    public static String billPath = "C:\\Users\\casma\\OneDrive\\Documentos\\NetBeansProjects\\Inventory Management System\\";
+
+    public static String billPath = "C:\\Users\\casma\\OneDrive\\Documentos\\NetBeansProjects\\Inventory Management System\\tickets\\";
+
 }

@@ -104,11 +104,11 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
-        jLabel1.setText("Manage Order");
+        jLabel1.setText("Gestionar pedidos");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 33, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel2.setText("Customer List");
+        jLabel2.setText("Lista de clientes");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 113, -1, -1));
 
         tableCustomer.setModel(new javax.swing.table.DefaultTableModel(
@@ -116,7 +116,7 @@ public class ManageOrder extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Name", "Mobile Number", "Email"
+                "ID", "Nombre", "Número de celular", "Email"
             }
         ));
         tableCustomer.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -129,7 +129,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 146, 367, 230));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel3.setText("Product List");
+        jLabel3.setText("Lista de productos");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(554, 113, -1, -1));
 
         tableProduct.setModel(new javax.swing.table.DefaultTableModel(
@@ -137,7 +137,7 @@ public class ManageOrder extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "Name", "Price", "Quantity", "Description", "Category ID", "Category Name"
+                "ID", "Nombre", "Precio", "Cantidad", "Descripción", "Categoría ID", "Categoría Nombre"
             }
         ));
         tableProduct.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -150,7 +150,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 146, 426, 230));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel4.setText("Cart");
+        jLabel4.setText("Carrito de compra");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1079, 113, -1, -1));
 
         tableCart.setModel(new javax.swing.table.DefaultTableModel(
@@ -158,7 +158,7 @@ public class ManageOrder extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Product ID", "Name", "Quantity", "Price", "Description", "Sub Total"
+                "Producto ID", "Nombre", "Cantidad", "Precio", "Descripción", "Sub Total"
             }
         ));
         tableCart.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -171,63 +171,63 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(835, 146, 506, 230));
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setText("Selected Customer:");
+        jLabel5.setText("Cliente seleccionado:");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 401, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Name");
+        jLabel6.setText("Nombre");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 435, -1, -1));
 
         txtCustomerName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtCustomerName, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 469, 367, -1));
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setText("Mobile Number");
+        jLabel7.setText("Número de celular");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 509, -1, -1));
 
         txtCustomerMobileNumber.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtCustomerMobileNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 543, 367, -1));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setText("Email");
+        jLabel8.setText("Correo electrónico");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 583, -1, -1));
 
         txtCustomerEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtCustomerEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 617, 367, -1));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel9.setText("Selected Product");
+        jLabel9.setText("Producto seleccionado:");
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 401, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel10.setText("Product Name");
+        jLabel10.setText("Nombre del producto");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 435, -1, -1));
 
         txtProductName.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtProductName, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 469, 426, -1));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Product Price");
+        jLabel11.setText("Precio del producto");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 509, -1, -1));
 
         txtProductPrice.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtProductPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 543, 426, -1));
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Product Description");
+        jLabel12.setText("Descripción del producto");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 583, -1, -1));
 
         txtProductDescription.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtProductDescription, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 617, 426, -1));
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel13.setText("Order Quantity");
+        jLabel13.setText("Cantidad a pedir:");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 657, -1, -1));
 
         txtOrderQuantity.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(txtOrderQuantity, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 690, 426, -1));
 
-        jButton1.setText("Add to Cart");
+        jButton1.setText("Añadir al Carrito");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -236,7 +236,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(391, 717, 426, -1));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel14.setText("Total Amount RS:");
+        jLabel14.setText("Importe Total");
         getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(969, 395, -1, -1));
 
         lblFinalTotalPrice.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -244,7 +244,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(lblFinalTotalPrice, new org.netbeans.lib.awtextra.AbsoluteConstraints(1144, 395, -1, -1));
 
         btnSaveOrderDetails.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnSaveOrderDetails.setText("Save Order Details");
+        btnSaveOrderDetails.setText("Guardar detalles del pedido");
         btnSaveOrderDetails.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveOrderDetailsActionPerformed(evt);
@@ -253,7 +253,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(btnSaveOrderDetails, new org.netbeans.lib.awtextra.AbsoluteConstraints(835, 468, 506, -1));
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton3.setText("Reset");
+        jButton3.setText("Restablecer");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -262,7 +262,7 @@ public class ManageOrder extends javax.swing.JFrame {
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(835, 542, 506, -1));
 
         jButton4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jButton4.setText("Close");
+        jButton4.setText("Cerrar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -374,7 +374,7 @@ public class ManageOrder extends javax.swing.JFrame {
                     if (rs.getInt("quantity") >= Integer.parseInt(noOfUnits)) {
                         checkStock = 1;
                     } else {
-                        JOptionPane.showMessageDialog(null, "Product is out of stock. Only " + rs.getInt("quantity") + " Left");
+                        JOptionPane.showMessageDialog(null, "Producto agotado. Sólo " + rs.getInt("quantity") + " quedan");
                     }
                 }
             } catch (Exception e) {
@@ -387,7 +387,7 @@ public class ManageOrder extends javax.swing.JFrame {
                     for (int i = 0; i < tableCart.getRowCount(); i++) {
                         if (Integer.parseInt(model.getValueAt(i, 0).toString()) == productPk) {
                             checkProductAlreadyExistInCart = 1;
-                            JOptionPane.showMessageDialog(null, "Product already exist in cart");
+                            JOptionPane.showMessageDialog(null, "El producto ya existe en el carrito");
                         }
                     }
                 }
@@ -396,19 +396,19 @@ public class ManageOrder extends javax.swing.JFrame {
                     model.addRow(new Object[]{productPk, productName, noOfUnits, productPrice, productDescription, totalPrice});
                     finalTotalPrice = finalTotalPrice + totalPrice;
                     lblFinalTotalPrice.setText(String.valueOf(finalTotalPrice));
-                    JOptionPane.showMessageDialog(null, "Added Successfuly");
+                    JOptionPane.showMessageDialog(null, "Añadido con éxito");
                 }
                 clearProductFields();
             }
         } else {
-            JOptionPane.showMessageDialog(null, "No of Quantity and product field is required");
+            JOptionPane.showMessageDialog(null, "El campo Cantidad y Producto es obligatorio");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void tableCartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableCartMouseClicked
         // TODO add your handling code here:
         int index = tableCart.getSelectedRow();
-        int a = JOptionPane.showConfirmDialog(null, "Do you want to remove this product", "Select", JOptionPane.YES_NO_OPTION);
+        int a = JOptionPane.showConfirmDialog(null, "¿Desea eliminar este producto?", "Seleccione", JOptionPane.YES_NO_OPTION);
         if (a == 0) {
             TableModel model = tableCart.getModel();
             String subTotal = model.getValueAt(index, 5).toString();
@@ -421,7 +421,7 @@ public class ManageOrder extends javax.swing.JFrame {
     private void btnSaveOrderDetailsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveOrderDetailsActionPerformed
         // TODO add your handling code here:
         if (finalTotalPrice != 0 && !txtCustomerName.getText().equals("")) {
-            orderId = getUniqueId("Bill-");
+            orderId = getUniqueId("Ticket-");
 
             DefaultTableModel dtm = (DefaultTableModel) tableCart.getModel();
             if (tableCart.getRowCount() != 0) {
@@ -456,19 +456,19 @@ public class ManageOrder extends javax.swing.JFrame {
                 Calendar cal = Calendar.getInstance();
                 PdfWriter.getInstance(doc, new FileOutputStream(InventoryUtils.billPath+""+orderId+".pdf"));
                 doc.open();
-                Paragraph projectName = new Paragraph("                                                 Inventory Management System\n");
+                Paragraph projectName = new Paragraph("                                                 Sistema de gestión de inventario\n");
                 doc.add(projectName);
                 Paragraph starLine = new Paragraph("****************************************************************************************************************");
                 doc.add(starLine);
-                Paragraph details = new Paragraph("\tOrder ID: " + orderId + "\nDate:  " + myFormat.format(cal.getTime()) + "\n Total Paid: " + finalTotalPrice);
+                Paragraph details = new Paragraph("\tOrder ID: " + orderId + "\nDate:  " + myFormat.format(cal.getTime()) + "\n Total Pagado: " + finalTotalPrice);
                 doc.add(details);
                 doc.add(starLine);
                 PdfPTable tb1 = new PdfPTable(5);
-                PdfPCell nameCell = new PdfPCell(new Phrase("Name"));
-                PdfPCell descriptionCell = new PdfPCell(new Phrase("Description"));
-                PdfPCell priceCell = new PdfPCell(new Phrase("Price Per Unit"));
-                PdfPCell quantityCell = new PdfPCell(new Phrase("Quantity"));
-                PdfPCell subTotalCell = new PdfPCell(new Phrase("Sub Total Price"));
+                PdfPCell nameCell = new PdfPCell(new Phrase("Nombre"));
+                PdfPCell descriptionCell = new PdfPCell(new Phrase("Descripción"));
+                PdfPCell priceCell = new PdfPCell(new Phrase("Precio por unidad"));
+                PdfPCell quantityCell = new PdfPCell(new Phrase("Cantidad"));
+                PdfPCell subTotalCell = new PdfPCell(new Phrase("Precio subtotal"));
                 
                 BaseColor backgroundColor = new BaseColor(255,204,51);
                 nameCell.setBackgroundColor(backgroundColor);
@@ -494,7 +494,7 @@ public class ManageOrder extends javax.swing.JFrame {
                 
                 doc.add(tb1);
                 doc.add(starLine);
-                Paragraph thanksMsg = new Paragraph("Than you, Please visit again");
+                Paragraph thanksMsg = new Paragraph("Gracias. Visítenos de nuevo.");
                 doc.add(thanksMsg);
                 OpenPdf.OpenById(orderId);
                 
@@ -507,7 +507,7 @@ public class ManageOrder extends javax.swing.JFrame {
             new ManageOrder().setVisible(true);
         }
         else{
-            JOptionPane.showMessageDialog(null, "Please add some product to cart or select customer ");
+            JOptionPane.showMessageDialog(null, "Por favor, añada algún producto al carrito o seleccione cliente ");
         }
     }//GEN-LAST:event_btnSaveOrderDetailsActionPerformed
 
